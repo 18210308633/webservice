@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service name="axisDemo">
+    <description>
+        Web Service例子
+    </description>
+    <parameter name="ServiceClass">
+        com.ServiceImpl
+    </parameter>
+    <operation name="sayHello">  
+        <messageReceiver class="org.apache.axis2.rpc.receivers.RPCMessageReceiver" />  
+    </operation> 
+</service>
+<service name="Return">
+		<description>
+			HelloWorld 
+    </description>
+		<parameter name="ServiceClass">
+			http.cliet.WebServiceClientUtils
+    </parameter>
+		<operation name="saveResult">
+			<messageReceiver class="org.apache.axis2.rpc.receivers.RPCMessageReceiver" />
+		</operation>
+	</service>
